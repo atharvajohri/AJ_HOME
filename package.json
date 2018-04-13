@@ -1,0 +1,23 @@
+{
+  "name": "atharva",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "NODE_ENV=production node server",
+    "start:server:dev": "NODE_ENV=development nodemon server",
+    "start:client:dev": "NODE_ENV=development SERVER_HOST=http://localhost:3020 parcel client/src/index.html",
+    "build:client": "NODE_ENV=production SERVER_HOST=http://localhost:3020 parcel build client/src/index.html --no-minify --public-url /"
+  },
+  "author": "johri.atharva@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel-preset-react-app": "^3.1.0",
+    "express": "^4.16.3",
+    "material-ui": "^1.0.0-beta.41",
+    "parcel-bundler": "latest",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
